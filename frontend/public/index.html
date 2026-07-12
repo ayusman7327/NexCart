@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111111" />
+    <title>NexCart</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Nunito", "Segoe UI", sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+      }
+      a {
+        cursor: pointer;
+      }
+      button {
+        font-family: inherit;
+      }
+      input,
+      select,
+      textarea {
+        font-family: inherit;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 3px;
+      }
+
+      /* Responsive: hide desktop nav, show hamburger on mobile */
+      @media (max-width: 768px) {
+        nav {
+          display: none !important;
+        }
+        button[data-hamburger] {
+          display: flex !important;
+        }
+        .desktop-only {
+          display: none !important;
+        }
+      }
+
+      /* Product grid responsive */
+      @media (max-width: 900px) {
+        .product-layout {
+          grid-template-columns: 1fr !important;
+        }
+        .checkout-layout {
+          grid-template-columns: 1fr !important;
+        }
+        .cart-layout {
+          grid-template-columns: 1fr !important;
+        }
+      }
+
+      /* Sidebar hide on mobile */
+      @media (max-width: 768px) {
+        .sidebar-desktop {
+          display: none !important;
+        }
+        .filter-toggle {
+          display: flex !important;
+        }
+        .cart-header {
+          display: none !important;
+        }
+        .item-price-desktop {
+          display: none !important;
+        }
+        .item-price-mobile {
+          display: block !important;
+        }
+        .item-qty {
+          display: none !important;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.4;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
