@@ -99,19 +99,6 @@ NexCart-AI/
 
 ---
 
-# ⚙️ Installation
-
-## Clone Repository
-
-```bash
-git clone https://github.com/yourusername/nexcart-ai.git
-```
-
-```
-cd nexcart-ai
-```
-
----
 
 ## Install Frontend
 
@@ -206,11 +193,6 @@ Contributions are welcome.
 4. Push your branch
 5. Open a Pull Request
 
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
